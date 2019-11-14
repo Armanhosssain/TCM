@@ -1,0 +1,122 @@
+/*base css*/
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+/*dropdown menu hover*/
+.dropdown-menu{
+	background: #ccc;
+}
+.dropdown:hover{
+	transition: 0.5s all ease-in;
+	-o-transition: 0.5s all ease-in;
+	-moz-transition: 0.5s all ease-in;
+	-webkit-transition: 0.5s all ease-in;
+}
+.dropdown:hover>.dropdown-menu{
+	display: block;
+	background: linear-gradient(#39b9b9,#88848a,#81c11e,#1eb2b2);
+	color: #fff;
+	
+}
+.dropdown-item:hover{
+	background: linear-gradient(#0dc1c1,#5a86ad);
+	transition: 0.5s all ease-in;
+	-o-transition: 0.5s all ease-in;
+	-moz-transition: 0.5s all ease-in;
+	-webkit-transition: 0.5s all ease-in;
+}
+.dropdown-menu a:hover{
+	color: #fff;
+}
+/*side dropdown*/
+.nav-item:hover>.dropdown-menu{
+	display: block;
+}
+.side-drop{
+	background: linear-gradient(#39b9b9,#88848a,#81c11e,#1eb2b2);
+	color: #fff;
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+.side-drop a:hover{
+	background: linear-gradient(to left,#ccc,#ddd);
+	color: #ff0000;
+	text-transform: uppercase;
+}
+/*about testimonial*/
+.bottom-border{
+	border-bottom: 5px solid #ff0000;
+}
+/*top title background image*/
+#top-title{
+	background: url(../img/slider3.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+/*main slider image*/
+.owl-carousel .main-slider img{
+	height: 400px;
+}
+/*gallery css*/
+#gallery img{
+	min-height: 250px;
+	width: 100%;
+}
+/*footer*/
+footer a:hover{
+	color:#e83216;
+	text-decoration: none;
+}
+footer .card-footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+footer .under576{
+	display: none;
+}
+/*responsive footer*/
+@media (max-width: 991px){
+	footer ul li{
+		font-size: .7rem;
+		padding: 0;
+		margin: 0;
+	}
+}
+@media (max-width: 576px){
+	footer a:hover{
+		color:#e83216;
+		text-decoration: none;
+	}
+	.extra-small{
+		font-size: 10px;
+	}
+	footer .footer-bottom-left{
+		font-size: 12px;
+	}
+	footer .footer-bottom-right{
+		font-size: 12px;
+	}
+}
+@media (max-width: 575px){
+	.hide576> .card-body{
+		display: none;
+	}
+	footer .under576{
+		display: block;
+	}
+	.under576 .footer-left a{
+		padding: 8px 15px;
+		color: #fff;
+	}
+	.under576 .footer-left a:hover{
+		color: #00ff00;
+	}
+}
