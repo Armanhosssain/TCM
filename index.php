@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Personal portfolio</title>
+		<title>VITI-Comes and know about us</title>
 				<!-- for shortcut icon -->
-		<link rel="shortcut icon" type="image/png" href="img/edit.png">	
+		<link rel="shortcut icon" type="image/png" href="img/cropped-VITI-Logo.png">	
 				<!-- for various language -->
 		<meta charset="utf-8">	
 				<!-- for author -->
@@ -28,7 +28,7 @@
 				<!-- main customize css -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
-	<body class="">
+	<body>
 			  <!-- start navigation  -->
 			  	<?php include('header.php'); ?>
 			  <!-- end navigation -->
@@ -54,36 +54,40 @@
 					  	<img src="img/slider6.jpg">
 					  </div>
 				</div>
+			</div>	<!-- end container -->
 			  <!-- slider end -->
 			  <!-- page sample start -->
+			  <section class="home-blog pb-5">
+			  	<div class="container">
+			  	<h2 class="text-center py-5"><span>Our available course </span></h2>
 			  	<div class="row">
 			  		<div class="col-md-4 col-sm-6 col-xs-12 mb-3">
 			  			<div class="card" >
-						  <img src="img/slider1.jpg" class="card-img-top" alt="picture">
+						  <img src="img/webd.jpg" class="card-img-top" alt="picture">
 						  <div class="card-body">
 						    <h5 class="card-title">Web design</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-primary">View more</a>
+						    <a href="webdesign.php" class="btn btn-primary">View more</a>
 						  </div>
 						</div>
 			  		</div>
 			  		<div class="col-md-4 col-sm-6 col-xs-12 mb-3">
 			  			<div class="card">
-						  <img src="img/slider1.jpg" class="card-img-top" alt="picture">
+						  <img src="img/graphicd.jpg" class="card-img-top" alt="picture">
 						  <div class="card-body">
 						    <h5 class="card-title">Graphics design</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-primary">View more</a>
+						    <a href="graphics.php" class="btn btn-primary">View more</a>
 						  </div>
 						</div>
 			  		</div>
 			  		<div class="col-md-4 col-sm-6 col-xs-12 mb-3">
 			  			<div class="card">
-						  <img src="img/slider1.jpg" class="card-img-top" alt="picture">
+						  <img src="img/office.jpg" class="card-img-top" alt="picture">
 						  <div class="card-body">
-						    <h5 class="card-title">MS office Basic</h5>
+						    <h5 class="card-title">MS office</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-primary">View more</a>
+						    <a href="office.php" class="btn btn-primary">View more</a>
 						  </div>
 						</div>
 			  		</div>
@@ -91,38 +95,43 @@
 			  	<!-- <div class="row"> -->
 			  		<div class="col-md-4 col-sm-6 col-xs-12">
 			  			<div class="card" >
-						  <img src="img/slider1.jpg" class="card-img-top" alt="picture">
+						  <img src="img/wordpress.jpg" class="card-img-top" alt="picture">
 						  <div class="card-body">
 						    <h5 class="card-title">Wordpress</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-primary">View more</a>
+						    <a href="wordpress.php" class="btn btn-primary">View more</a>
 						  </div>
 						</div>
 			  		</div>
 			  		<div class="col-md-4 col-sm-6 col-xs-12 ">
 			  			<div class="card">
-						  <img src="img/slider1.jpg" class="card-img-top" alt="picture">
+						  <img src="img/videoe.jpg" class="card-img-top" alt="picture">
 						  <div class="card-body">
 						    <h5 class="card-title">Video editing</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-primary">View more</a>
+						    <a href="videoediting.php" class="btn btn-primary">View more</a>
 						  </div>
 						</div>
 			  		</div>
 			  		<div class="col-md-4 col-sm-6 col-xs-12 ">
 			  			<div class="card">
-						  <img src="img/slider1.jpg" class="card-img-top" alt="picture">
+						  <img src="img/desktop-service.jpg" class="card-img-top" alt="picture">
 						  <div class="card-body">
 						    <h5 class="card-title">Advance hardware</h5>
 						    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-						    <a href="#" class="btn btn-primary">View more</a>
+						    <a href="hardware.php" class="btn btn-primary">View more</a>
 						  </div>
 						</div>
 			  		</div>
 			  	</div>
+			  	</div>
+			  	</section>
 			  <!-- page sample end -->
 			  <!-- our student say start -->
 			  <!-- second slider -->
+			  <section class="happy-student">
+			  	<div class="container">
+			  	<h2 class="text-center my-5"><span>What our student say </span></h2>
 				  <div class="student-slider owl-carousel owl-theme mt-3">
 					<div class="items">
 				  		<div class="card">
@@ -144,7 +153,7 @@
 				  		<div class="card">
 						  <div class="row no-gutters">
 						    <div class="col-md-4">
-						      <img src="img/slider5.jpg" class="card-img" alt="student image">
+						      <img src="img/slider2.jpg" class="card-img" alt="student image">
 						    </div>
 						    <div class="col-md-8">
 						      <div class="card-body">
@@ -160,7 +169,7 @@
 				  		<div class="card">
 						  <div class="row no-gutters">
 						    <div class="col-md-4">
-						      <img src="img/slider5.jpg" class="card-img" alt="student image">
+						      <img src="img/slider3.jpg" class="card-img" alt="student image">
 						    </div>
 						    <div class="col-md-8">
 						      <div class="card-body">
@@ -172,8 +181,9 @@
 						  </div>
 						</div>
 			  		</div>
-						  
 					</div>
+					</div>
+					</section>
 			  <!-- our student say end -->
 			  <!-- counter start -->
 			  	<div class="row">

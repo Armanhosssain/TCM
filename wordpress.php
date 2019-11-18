@@ -10,7 +10,7 @@
 	<section id="top-title" class="text-center text-light">
 	    <div class="row">
 	      <div class="col py-5 mt-5">
-	        <h2>Wordpress theme customization</h2>
+	        <h2 class="text-light">Wordpress theme customization</h2>
 	        <p class="lead">
 	          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, alias?
 	        </p>

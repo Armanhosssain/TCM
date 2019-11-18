@@ -22,9 +22,9 @@
   <section id="gallery" class="py-5" uk-lightbox>
     <div class="container">
       <div class="row text-center mb-4">
-        <div class="col">
-          <h3>Photo Gallery</h3>
-          <p class="lead">Check out our photos</p>
+        <div class="col text-light">
+          <h3 class="text-light">Photo Gallery</h3>
+          <p class="">Check out our photos</p>
         </div>
       </div>
       <div class="row">

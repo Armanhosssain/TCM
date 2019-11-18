@@ -1,9 +1,56 @@
 /*base css*/
-ul li{
+li{
 	list-style-type: none;
 }
 a{
 	text-decoration: none;
+}
+body{
+	background-color: #fff;
+}
+/*header*/
+.nav-item:hover{
+	border-bottom: 2px solid red;
+}
+.nav-item:last-child{
+	background-color: #ff0000;
+	color: #000;
+}
+/*home page*/
+.home-blog{
+	background-color: #f9f9f9;
+}
+.home-blog .card:hover{
+	box-shadow: 5px 5px 8px #ccccb3;
+}
+section.home-blog img{
+	height: 200px;
+}
+section.home-blog span{
+	border-bottom: 4px dashed #666;
+	color: #000;
+	font-weight: 700;
+	font-size: 2em;
+}
+section.happy-student span{
+	border-bottom: 4px dashed #666;
+	color: #000;
+	font-weight: 700;
+	font-size: 2em;
+}
+/*about page*/
+section.teacher-details span{
+	border-bottom: 5px dashed #ff9900;
+	color: #009900;
+	font-weight: 500;
+	font-size: 2em;
+}
+section.teacher-details img{
+	height: 200px;
+}
+.teacher-details .card:hover{
+	box-shadow: -10px -10px 10px #ccc,10px 10px 10px #ccc;
+	transition: 1s; 
 }
 /*dropdown menu hover*/
 .dropdown-menu{
@@ -31,32 +78,38 @@ a{
 .dropdown-menu a:hover{
 	color: #fff;
 }
-/*side dropdown*/
-.nav-item:hover>.dropdown-menu{
-	display: block;
-}
-.side-drop{
-	background: linear-gradient(#39b9b9,#88848a,#81c11e,#1eb2b2);
-	color: #fff;
-	position: absolute;
-	top: 100px;
-	left: 50px;
-}
-.side-drop a:hover{
-	background: linear-gradient(to left,#ccc,#ddd);
-	color: #ff0000;
-	text-transform: uppercase;
-}
+
 /*about testimonial*/
 .bottom-border{
 	border-bottom: 5px solid #ff0000;
 }
 /*top title background image*/
 #top-title{
-	background: url(../img/slider3.jpg) no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
+  width: 100%;
+  height: 100%;
+  animation: pulse 5s infinite;
 }
+
+@keyframes pulse {
+  0% {
+    background-color: #001F3F;
+  }
+  100% {
+    background-color: #666;
+  }
+}
+}
+#top-title .row{
+	transform: skew(-45deg);
+	width: 30%;
+	margin: auto;
+	background-color: #666;
+	border-bottom: 100px solid chocolate;
+}
+#top-title .row:hover{
+	transform: scale(.9);
+}
+
 /*main slider image*/
 .owl-carousel .main-slider img{
 	height: 400px;
@@ -66,7 +119,20 @@ a{
 	min-height: 250px;
 	width: 100%;
 }
+/*application form start*/
+.s-button{
+	margin-left: 49%;
+	margin-top: 30px;
+}
+@media (max-width: 700px) {
+  .s-button{
+    margin-left: 37%;
+  }
+}
 /*footer*/
+footer a{
+	color: #fff;
+}
 footer a:hover{
 	color:#e83216;
 	text-decoration: none;
@@ -81,6 +147,57 @@ footer .card-footer{
 }
 footer .under576{
 	display: none;
+}
+.footer-bottom-middle a{
+	font-size: 30px;
+	margin-left: 10px;
+}
+/*footer icon*/
+.icon ul li{
+	list-style: none;
+	float: left;
+	margin-right: 10px;
+}
+.icon ul li:last-child{
+	margin-right: 0;
+}
+.icon ul li a{
+	height: 40px;
+	width: 48px;
+	background-image: url(../img/facebook.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 40%;
+	transition: 1s;
+}
+.icon ul li:nth-child(1) a{
+	background-position: -169px -91px;
+}
+.icon ul li:hover:nth-child(1) a{
+	background-position: -169px -17px;
+	border-color: #ddd;
+}
+.icon ul li:nth-child(2) a{
+	 background-position: -15px -162px;;
+}
+.icon ul li:hover:nth-child(2) a{
+	background-position: -15px -17px;
+	border-color: #ddd;
+}
+.icon ul li:nth-child(3) a{
+	    background-position:-169px -17px
+}
+.icon ul li:hover:nth-child(3) a{
+	background-position:-169px -91px;
+	border-color: #ddd;
+}
+.icon ul li:nth-child(4) a{
+	    background-position:-15px -17px;
+}
+.icon ul li:hover:nth-child(4) a{
+	background-position: -16px -90px;
+	border-color: #ddd;
 }
 /*responsive footer*/
 @media (max-width: 991px){
